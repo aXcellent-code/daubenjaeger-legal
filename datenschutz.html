@@ -18,7 +18,7 @@ nav a{color:var(--acc);margin-right:14px;font-weight:600}a{color:var(--acc)}
 <body>
 <main>
 <h1>Daubenjäger</h1>
-<p class="muted">Datenschutzerklärung · Privacy Policy · Stand / last updated: 16.10.2026</p>
+<p class="muted">Datenschutzerklärung · Privacy Policy · Stand / last updated: 17.10.2026</p>
 <nav><a href="#de">Deutsch</a><a href="#en">English</a></nav>
 
 <section id="de">
@@ -27,7 +27,7 @@ nav a{color:var(--acc);margin-right:14px;font-weight:600}a{color:var(--acc)}
 <p>Alexander Peter<br>Höllstraße 13i, 4451 Garsten, Österreich<br>E-Mail: <a href="mailto:Alexander.Peter@aXcellent.at">Alexander.Peter@aXcellent.at</a></p>
 
 <h3>2. Kurz gesagt</h3>
-<p>Daubenjäger erhebt keine personenbezogenen Daten und überträgt nichts an uns oder an Dritte. Es gibt kein Benutzerkonto, keine Werbung, keine Analyse- oder Tracking-Dienste und keine In-App-Käufe.</p>
+<p>Offline (gegen die CPU, Solo, 2 Spieler, Zielwettbewerb) erhebt Daubenjäger keine personenbezogenen Daten und überträgt nichts. Nur wenn du den <b>Online-Modus</b> öffnest, verbindet sich die App mit unserem Server bei Google Firebase in Frankfurt (Abschnitt 4a). Es gibt keine Werbung, keine Analyse- oder Tracking-Dienste und keine In-App-Käufe.</p>
 
 <h3>3. Daten auf deinem Gerät</h3>
 <p>Damit das Spiel funktioniert, speichert die App ausschließlich lokal auf deinem Gerät: Einstellungen (Sprache, Ton, Grafik, Ansicht, Tageszeit), Spielstände und Bilanz gegen die CPU, Bestleistungen im Zielwettbewerb, ob das Tutorial abgeschlossen ist, sowie deinen Spielfortschritt und dein gewähltes Stock-Design. Diese Daten verlassen dein Gerät nicht. Du kannst sie jederzeit löschen, indem du die App-Daten in den Android-Einstellungen löschst oder die App deinstallierst.</p>
@@ -35,20 +35,31 @@ nav a{color:var(--acc);margin-right:14px;font-weight:600}a{color:var(--acc)}
 <h3>4. Kontakt per E-Mail und „Fehler melden“</h3>
 <p>Über „Fehler melden“ in den Einstellungen öffnet die App dein E-Mail-Programm mit einer vorbereiteten Nachricht. Sie enthält die App-Version, dein Gerätemodell mit Android-Version, die Bildschirmgröße und die eingestellte Sprache. Gesendet wird erst, wenn du die E-Mail selbst abschickst, und du kannst den Inhalt vorher ändern oder löschen. Schreibst du uns, verarbeiten wir deine E-Mail-Adresse, deine Nachricht und diese Angaben ausschließlich, um dein Anliegen zu bearbeiten (Art. 6 Abs. 1 lit. f DSGVO, berechtigtes Interesse an einer funktionierenden App). Die E-Mails löschen wir, sobald das Anliegen erledigt ist und keine gesetzliche Aufbewahrungspflicht besteht.</p>
 
-<h3>4a. Berechtigungen</h3>
-<p>Die App benötigt keine besonderen Berechtigungen (kein Standort, keine Kamera, kein Mikrofon, keine Kontakte).</p>
+<h3>4a. Online-Modus (Google Firebase)</h3>
+<p>Für Online-Partien nutzen wir Google Firebase (Google Ireland Ltd., Gordon House, Barrow Street, Dublin 4, Irland) als Auftragsverarbeiter: Firebase Authentication, Cloud Firestore und Cloud Functions, Serverstandort Frankfurt (europe-west3). Die Verbindung wird erst aufgebaut, wenn du „Online“ wählst.</p>
+<ul>
+<li><b>Anmeldung:</b> Du spielst ohne Konto mit einer zufälligen, anonymen Kennung. Wählst du „Mit Google sichern“, verknüpft Firebase diese Kennung mit deinem Google-Konto; dabei verarbeitet Firebase deine Google-E-Mail-Adresse, damit du dich auf einem neuen Gerät wieder anmelden kannst.</li>
+<li><b>Spielerprofil:</b> der von dir gewählte Spielername, Elo-Wertung, Liga und Bilanz (Siege, Unentschieden, Niederlagen), Zeitpunkt der Anlage und der letzten Aktivität. Spielername, Wertung und Liga sehen andere Spieler (Gegner, Rangliste).</li>
+<li><b>Partien:</b> Spielernamen und Wertungen beider Spieler, gewählte Bahn und Stockdesign, alle Würfe (Richtung, Kraft, Drall, Platte) und der Spielstand. Beim Suchen eines Gegners entsteht ein kurzer Eintrag in der Warteschlange.</li>
+<li><b>Technische Daten:</b> Beim Verbindungsaufbau verarbeitet Google technisch notwendige Daten wie die IP-Adresse und Geräteinformationen, um die Verbindung herzustellen und Missbrauch zu verhindern.</li>
+</ul>
+<p>Rechtsgrundlage ist die Erfüllung des Nutzungsvertrags, also das Online-Spiel, das du anforderst (Art. 6 Abs. 1 lit. b DSGVO). Es kann nicht ausgeschlossen werden, dass Google Daten in die USA überträgt; Google ist nach dem EU-US Data Privacy Framework zertifiziert und verwendet zusätzlich Standardvertragsklauseln.</p>
+<p><b>Speicherdauer und Löschung:</b> Warteschlangen-Einträge löschen wir nach spätestens 10 Minuten, beendete oder verlassene Partien nach 2 Tagen. Profile, die 12 Monate nicht online gespielt haben, löschen wir automatisch. Du kannst dein Online-Konto jederzeit im Online-Bereich unter „Online-Konto löschen“ sofort löschen.</p>
+
+<h3>4b. Berechtigungen</h3>
+<p>Die App benötigt keine besonderen Berechtigungen (kein Standort, keine Kamera, kein Mikrofon, keine Kontakte). Für den Online-Modus nutzt sie die Internetverbindung.</p>
 
 <h3>5. Google Play</h3>
 <p>Beim Herunterladen über Google Play verarbeitet Google Daten in eigener Verantwortung, siehe <a href="https://policies.google.com/privacy" rel="noopener">Datenschutzerklärung von Google</a>. Darauf haben wir keinen Einfluss.</p>
 
 <h3>6. Künftige Funktionen</h3>
-<p>Geplant sind Online-Spiele, ein Spielerkonto, Werbung und In-App-Käufe. Bevor eine dieser Funktionen eingeführt wird, aktualisieren wir diese Erklärung und informieren in der App darüber.</p>
+<p>Geplant sind Werbung und In-App-Käufe sowie Partner-Inhalte (Sponsorenlogos sind fest in der App enthalten und übertragen keine Daten). Bevor Werbung oder Käufe eingeführt werden, aktualisieren wir diese Erklärung und informieren in der App darüber.</p>
 
 <h3>7. Deine Rechte</h3>
-<p>Du hast nach der DSGVO das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch. Da wir keine personenbezogenen Daten von dir verarbeiten, liegen bei uns keine Daten über dich vor. Für Fragen erreichst du uns unter der oben genannten E-Mail-Adresse. Du hast außerdem das Recht auf Beschwerde bei der Aufsichtsbehörde, in Österreich der <a href="https://www.dsb.gv.at" rel="noopener">Datenschutzbehörde</a>.</p>
+<p>Du hast nach der DSGVO das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch. Offline verarbeiten wir keine Daten von dir; für den Online-Modus betrifft das die Daten aus Abschnitt 4a. Dein Online-Konto kannst du in der App selbst löschen. Für Fragen erreichst du uns unter der oben genannten E-Mail-Adresse. Du hast außerdem das Recht auf Beschwerde bei der Aufsichtsbehörde, in Österreich der <a href="https://www.dsb.gv.at" rel="noopener">Datenschutzbehörde</a>.</p>
 
 <h3>8. Kinder</h3>
-<p>Die App ist für alle Altersgruppen geeignet und erhebt auch von Kindern keine Daten.</p>
+<p>Offline ist die App für alle Altersgruppen geeignet und erhebt keine Daten. Den Online-Modus mit Spielername und Rangliste sollten Kinder unter 14 Jahren nur mit Zustimmung der Eltern nutzen.</p>
 </section>
 
 <section id="en">
@@ -57,7 +68,7 @@ nav a{color:var(--acc);margin-right:14px;font-weight:600}a{color:var(--acc)}
 <p>Alexander Peter<br>Höllstraße 13i, 4451 Garsten, Austria<br>Email: <a href="mailto:Alexander.Peter@aXcellent.at">Alexander.Peter@aXcellent.at</a></p>
 
 <h3>2. In short</h3>
-<p>Daube Hunter does not collect personal data and does not transmit anything to us or to third parties. There is no user account, no advertising, no analytics or tracking services and no in-app purchases.</p>
+<p>Offline (against the CPU, solo, 2 players, target contest) Daube Hunter collects no personal data and transmits nothing. Only when you open <b>online mode</b> does the app connect to our server at Google Firebase in Frankfurt (section 4a). There is no advertising, no analytics or tracking services and no in-app purchases.</p>
 
 <h3>3. Data on your device</h3>
 <p>To work, the app stores the following only locally on your device: settings (language, sound, graphics, view, time of day), results and your record against the CPU, best scores in the target contest, whether the tutorial is completed, and your game progress and chosen stock design. This data never leaves your device. You can delete it at any time by clearing the app data in the Android settings or by uninstalling the app.</p>
@@ -65,20 +76,31 @@ nav a{color:var(--acc);margin-right:14px;font-weight:600}a{color:var(--acc)}
 <h3>4. Contact by email and “Report a bug”</h3>
 <p>“Report a bug” in the settings opens your email app with a prepared message. It contains the app version, your device model and Android version, the screen size and the selected language. Nothing is sent until you send the email yourself, and you can edit or delete the content beforehand. If you write to us, we process your email address, your message and this information solely to handle your request (Art. 6(1)(f) GDPR, legitimate interest in a working app). We delete the emails once the matter is resolved and no statutory retention obligation applies.</p>
 
-<h3>4a. Permissions</h3>
-<p>The app does not require any special permissions (no location, camera, microphone or contacts).</p>
+<h3>4a. Online mode (Google Firebase)</h3>
+<p>For online matches we use Google Firebase (Google Ireland Ltd., Gordon House, Barrow Street, Dublin 4, Ireland) as a processor: Firebase Authentication, Cloud Firestore and Cloud Functions, server location Frankfurt (europe-west3). The connection is only made when you choose “Online”.</p>
+<ul>
+<li><b>Sign-in:</b> you play without an account using a random, anonymous ID. If you choose “Secure with Google”, Firebase links this ID to your Google account and processes your Google email address so you can sign in again on a new device.</li>
+<li><b>Player profile:</b> your chosen player name, Elo rating, league and record (wins, draws, losses), when it was created and last active. Other players see your name, rating and league (opponents, leaderboard).</li>
+<li><b>Matches:</b> names and ratings of both players, selected lane and stock design, all throws (direction, power, curl, plate) and the score. Looking for an opponent creates a short queue entry.</li>
+<li><b>Technical data:</b> when connecting, Google processes technically necessary data such as your IP address and device information to establish the connection and prevent abuse.</li>
+</ul>
+<p>The legal basis is performance of the contract, i.e. the online play you request (Art. 6(1)(b) GDPR). Google may transfer data to the USA; Google is certified under the EU-US Data Privacy Framework and additionally uses standard contractual clauses.</p>
+<p><b>Retention and deletion:</b> queue entries are deleted after 10 minutes at the latest, finished or abandoned matches after 2 days. Profiles that have not played online for 12 months are deleted automatically. You can delete your online account at any time in the online area under “Delete online account”.</p>
+
+<h3>4b. Permissions</h3>
+<p>The app does not require any special permissions (no location, camera, microphone or contacts). Online mode uses the internet connection.</p>
 
 <h3>5. Google Play</h3>
 <p>When you download the app via Google Play, Google processes data under its own responsibility, see <a href="https://policies.google.com/privacy" rel="noopener">Google's privacy policy</a>. We have no influence on this.</p>
 
 <h3>6. Future features</h3>
-<p>Online play, a player account, advertising and in-app purchases are planned. Before any of these is introduced, we will update this policy and inform you in the app.</p>
+<p>Advertising, in-app purchases and partner content are planned (sponsor logos are built into the app and transmit no data). Before advertising or purchases are introduced, we will update this policy and inform you in the app.</p>
 
 <h3>7. Your rights</h3>
-<p>Under the GDPR you have the right of access, rectification, erasure, restriction of processing, data portability and objection. As we do not process any personal data about you, we hold no data about you. For questions, contact us at the email address above. You also have the right to lodge a complaint with a supervisory authority; in Austria this is the <a href="https://www.dsb.gv.at" rel="noopener">Datenschutzbehörde</a>.</p>
+<p>Under the GDPR you have the right of access, rectification, erasure, restriction of processing, data portability and objection. Offline we process no data about you; for online mode this concerns the data in section 4a. You can delete your online account yourself in the app. For questions, contact us at the email address above. You also have the right to lodge a complaint with a supervisory authority; in Austria this is the <a href="https://www.dsb.gv.at" rel="noopener">Datenschutzbehörde</a>.</p>
 
 <h3>8. Children</h3>
-<p>The app is suitable for all ages and does not collect data from children either.</p>
+<p>Offline the app is suitable for all ages and collects no data. Children under 14 should only use online mode, with its player name and leaderboard, with parental consent.</p>
 </section>
 </main>
 </body>
